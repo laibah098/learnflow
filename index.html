@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard | LearnFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside>
+        <a class="brand" href="index.html">
+            L <span>LearnFlow</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="tasks.html">Study tasks</a>
+            <a href="notes.html">Study notes</a>
+            <a href="quiz.html">Quiz library</a>
+            <a href="timer.html">Focus timer</a>
+        </nav>
+
+        <button id="theme" class="secondary">Dark mode</button>
+    </aside>
+
+    <main>
+        <header>
+            <p class="eyebrow">YOUR LEARNING SPACE</p>
+            <h1>Dashboard</h1>
+            <p>Small steps. Real progress.</p>
+        </header>
+
+        <div id="stats" class="grid"></div>
+
+        <section>
+            <h2>Your courses</h2>
+            <p>Progress comes from lessons you mark complete.</p>
+            <div id="courses" class="grid"></div>
+        </section>
+
+        <footer>
+            Your tasks, notes and progress stay in this browser.
+        </footer>
+
+        <p id="storageMessage" role="status"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

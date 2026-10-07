@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Focus timer | LearnFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside>
+        <a class="brand" href="index.html">
+            L <span>LearnFlow</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="tasks.html">Study tasks</a>
+            <a href="notes.html">Study notes</a>
+            <a href="quiz.html">Quiz library</a>
+            <a href="timer.html" aria-current="page">Focus timer</a>
+        </nav>
+
+        <button id="theme" class="secondary">Dark mode</button>
+    </aside>
+
+    <main>
+        <header>
+            <p class="eyebrow">MAKE TIME TO LEARN</p>
+            <h1>Focus timer</h1>
+            <p>Focus for 25 minutes, then take a short break.</p>
+        </header>
+
+        <section class="timer">
+            <p id="timerStatus" role="status">Ready to focus</p>
+
+            <h2 id="time">25:00</h2>
+
+            <div class="row">
+                <button id="start">Start</button>
+                <button id="pause" class="secondary">Pause</button>
+                <button id="reset" class="secondary">Reset</button>
+            </div>
+
+            <p>Stay on this page during your focus session.</p>
+        </section>
+
+        <footer>
+            The timer resets when you leave or refresh this page.
+        </footer>
+
+        <p id="storageMessage" role="status"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

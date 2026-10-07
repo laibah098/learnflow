@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Courses | LearnFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside>
+        <a class="brand" href="index.html">
+            L <span>LearnFlow</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Dashboard</a>
+            <a href="courses.html" aria-current="page">Courses</a>
+            <a href="tasks.html">Study tasks</a>
+            <a href="notes.html">Study notes</a>
+            <a href="quiz.html">Quiz library</a>
+            <a href="timer.html">Focus timer</a>
+        </nav>
+
+        <button id="theme" class="secondary">Dark mode</button>
+    </aside>
+
+    <main>
+        <header>
+            <p class="eyebrow">BUILD YOUR SKILLS</p>
+            <h1>Courses</h1>
+            <p>
+                Read a lesson, try its example in VS Code,
+                then mark it complete.
+            </p>
+        </header>
+
+        <div id="lessons"></div>
+
+        <footer>
+            Completed lessons update your dashboard progress.
+        </footer>
+
+        <p id="storageMessage" role="status"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

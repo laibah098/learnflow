@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study tasks | LearnFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside>
+        <a class="brand" href="index.html">
+            L <span>LearnFlow</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="tasks.html" aria-current="page">Study tasks</a>
+            <a href="notes.html">Study notes</a>
+            <a href="quiz.html">Quiz library</a>
+            <a href="timer.html">Focus timer</a>
+        </nav>
+
+        <button id="theme" class="secondary">Dark mode</button>
+    </aside>
+
+    <main>
+        <header>
+            <p class="eyebrow">STAY ORGANIZED</p>
+            <h1>Study tasks</h1>
+            <p>Plan what you want to learn today.</p>
+        </header>
+
+        <section>
+            <form id="taskForm">
+                <label for="taskInput">What will you study?</label>
+
+                <div class="row">
+                    <input
+                        id="taskInput"
+                        type="text"
+                        required
+                        maxlength="200"
+                        placeholder="Practise CSS colors"
+                    >
+
+                    <button type="submit">Add task</button>
+                </div>
+            </form>
+
+            <div id="tasks"></div>
+        </section>
+
+        <footer>
+            Your tasks stay in this browser after refreshing.
+        </footer>
+
+        <p id="storageMessage" role="status"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

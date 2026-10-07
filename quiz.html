@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz library | LearnFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside>
+        <a class="brand" href="index.html">
+            L <span>LearnFlow</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="tasks.html">Study tasks</a>
+            <a href="notes.html">Study notes</a>
+            <a href="quiz.html" aria-current="page">Quiz library</a>
+            <a href="timer.html">Focus timer</a>
+        </nav>
+
+        <button id="theme" class="secondary">Dark mode</button>
+    </aside>
+
+    <main>
+        <header>
+            <p class="eyebrow">TEST YOUR KNOWLEDGE</p>
+            <h1>Quiz library</h1>
+            <p>
+                Choose a topic. Each quiz has its own score
+                and can be repeated.
+            </p>
+        </header>
+
+        <div id="quizLibrary" class="grid"></div>
+
+        <section id="quizArea" hidden></section>
+
+        <footer>
+            Your latest score for each quiz is saved in this browser.
+        </footer>
+
+        <p id="storageMessage" role="status"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

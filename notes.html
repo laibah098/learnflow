@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study notes | LearnFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside>
+        <a class="brand" href="index.html">
+            L <span>LearnFlow</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="tasks.html">Study tasks</a>
+            <a href="notes.html" aria-current="page">Study notes</a>
+            <a href="quiz.html">Quiz library</a>
+            <a href="timer.html">Focus timer</a>
+        </nav>
+
+        <button id="theme" class="secondary">Dark mode</button>
+    </aside>
+
+    <main>
+        <header>
+            <p class="eyebrow">REMEMBER WHAT YOU LEARN</p>
+            <h1>Study notes</h1>
+            <p>Keep your ideas and lesson summaries together.</p>
+        </header>
+
+        <section>
+            <form id="noteForm">
+                <label for="noteTitle">Title</label>
+
+                <input
+                    id="noteTitle"
+                    type="text"
+                    required
+                    maxlength="100"
+                    placeholder="HTML headings"
+                >
+
+                <label for="noteText">Your note</label>
+
+                <textarea
+                    id="noteText"
+                    required
+                    maxlength="5000"
+                    placeholder="Write something you learned..."
+                ></textarea>
+
+                <button id="saveNote" type="submit">Save note</button>
+            </form>
+        </section>
+
+        <div id="notes" class="grid"></div>
+
+        <footer>
+            Your notes stay in this browser and are not published.
+        </footer>
+
+        <p id="storageMessage" role="status"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
